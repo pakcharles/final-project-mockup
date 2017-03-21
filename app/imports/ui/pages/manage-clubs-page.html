@@ -1,0 +1,20 @@
+<template name="Manage_Clubs_Page">
+  <div style="margin-top: 20px" class="ui container">
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Add a Club</h4>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="Club Name" required=true errorMessage=(fieldError "clubname")}}
+          {{> Text_Form_Control label="Status" required=true errorMessage=(fieldError "status")}}
+        </div>
+      </div>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="Meeting Times" required=true errorMessage=(fieldError "meetingtimes")}}
+          {{> Text_Form_Control label="Meeting Place" required=true errorMessage=(fieldError "meetingplace")}}
+        </div>
+      </div>
+      <button class="ui button" type="submit">Add</button>
+    </form>
+  </div>
+</template>

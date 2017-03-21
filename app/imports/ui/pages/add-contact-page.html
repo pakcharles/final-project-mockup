@@ -1,0 +1,23 @@
+<template name="Add_Contact_Page">
+  <div style="margin-top: 20px" class="ui container">
+    <center><p>
+      Are you interested in making your own club? Do you not see your club on the catalog?<br>
+      Please fill out this information and an Admin will contact you shortly<br>
+    </p></center>
+    <form style="margin-top: 20px" class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Request Information</h4>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="First" required=true errorMessage=(fieldError "first")}}
+          {{> Text_Form_Control label="Last" required=true errorMessage=(fieldError "last")}}
+        </div>
+      </div>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="UH Email" required=true errorMessage=(fieldError "email")}}
+        </div>
+      </div>
+      <button class="ui button" type="submit">Request</button>
+    </form>
+  </div>
+</template>

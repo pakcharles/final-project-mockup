@@ -1,0 +1,37 @@
+<template name="My_Clubs_Page">
+  <div class="ui container">
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>Club Name</th>
+        <th>Status</th>
+        <th>Meeting Times</th>
+        <th>Meeting Place</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Grey Hats</td>
+        <td>Member</td>
+        <td>R: 4:30pm - 5:30pm</td>
+        <td>Keller 101</td>
+      </tr>
+      <tr>
+        <td>ACM</td>
+        <td>Member</td>
+        <td>W: 4:30pm - 5:30pm</td>
+        <td>Post 318B</td>
+      </tr>
+      <tr>
+        <td>SHRM</td>
+        <td>Member</td>
+        <td>M: 6:00pm - 7:00pm</td>
+        <td>BusAD 117</td>
+      </tr>
+      </tbody>
+    </table>
+    <div>
+      <a class="item" href="{{ pathFor 'Manage_Clubs_Page' }}">Add a club </a>
+    </div>
+  </div>
+</template>

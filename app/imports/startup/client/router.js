@@ -8,24 +8,45 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/list', {
-  name: 'List_Stuff_Page',
+FlowRouter.route('/login', {
+  name: 'Login_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'List_Stuff_Page' });
+    BlazeLayout.render('App_Body', { main: 'Login_Page' });
   },
 });
 
-FlowRouter.route('/add', {
-  name: 'Add_Stuff_Page',
+FlowRouter.route('/my-clubs', {
+  name: 'My_Clubs_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Add_Stuff_Page' });
+    BlazeLayout.render('App_Body', { main: 'My_Clubs_Page' });
   },
 });
 
-FlowRouter.route('/stuff/:_id', {
-  name: 'Edit_Stuff_Page',
+FlowRouter.route('/manage-clubs', {
+  name: 'Manage_Clubs_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
+    BlazeLayout.render('App_Body', { main: 'Manage_Clubs_Page' });
+  },
+});
+
+FlowRouter.route('/search', {
+  name: 'Search_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Search_Page' });
+  },
+});
+
+FlowRouter.route('/contact-us', {
+  name: 'Add_Contact_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Add_Contact_Page' });
+  },
+});
+
+FlowRouter.route('/edit-contact/:_id', {
+  name: 'Edit_Contact_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Contact_Page' });
   },
 });
 

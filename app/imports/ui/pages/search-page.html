@@ -1,0 +1,47 @@
+<template name="Search_Page">
+  <div style="margin-top: 20px" class="ui container">
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Search for Clubs</h4>
+      <p>Preferred Days of the Week</p>
+      <div class="ui checkbox">
+        <input type="checkbox" name="monday">
+        <label>Monday</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="tuesday">
+        <label>Tuesday</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="wednesday">
+        <label>Wednesday</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="thursday">
+        <label>Thursday</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="friday">
+        <label>Friday</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="weekends">
+        <label>Weekends</label>
+      </div>
+      <p>RIO</p>
+      <div class="ui checkbox">
+        <input type="checkbox" name="yes">
+        <label>Yes</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="no">
+        <label>No</label>
+      </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="doesntmatter">
+        <label>Doesn't Matter</label>
+      </div>
+      <p>Preferred times</p>
+      <button class="ui button" type="submit">Search</button>
+    </form>
+  </div>
+</template>
